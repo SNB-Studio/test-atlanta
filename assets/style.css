@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+*::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  margin: 0;
+  font-size: 16px;
+}
+
+a, button {
+  outline: none;
+  border: none;
+  text-decoration: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: none;
+}
+
+h1, p, a, button {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  font-weight: 400;
+  color: #000;
+}
+
+h1 {
+  font-size: 4.375em;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.125em;
+}
+
+.button {
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  padding: .875rem 2.375rem;
+  background-color: #000;
+  border-radius: 1.875rem;
+}
+
+.main-nav a {
+  text-transform: uppercase;
+  font-size: .75em;
+}
+
+.main-nav a:not(:last-of-type) {
+  margin-right: 1.5rem;
+}
+
+.header {
+  background-color: #A1DAD3;
+  padding: 0 2rem;
+}
+
+.header .header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 77px;
+}
+
+.index-top {
+  background-color: #E0F3F0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: calc(100vh - 77px);
+}
+
+.index-top .content {
+  padding: 5rem 3.125rem 6.25rem 3.125rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.index-top .content .button {
+  margin-top: 3.25rem;
+}
+
+.index-top .image {
+  padding: 1.5rem 0;
+  text-align: right;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+}
+
+.index-top .image img {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
+  .index-top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .index-top .content, .index-top .image {
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+  .index-top .content {
+    padding: 2.5rem;
+    padding-bottom: 0;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
